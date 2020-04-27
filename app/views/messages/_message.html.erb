@@ -1,0 +1,8 @@
+<div class="event">
+	<div class="ui teal small message" id = "<%= current_user.id == message.user_id ? 'message-sent' : 'message-received' %>" style = "color: black">
+		<div class="header" style = "color: black">
+	    <b><i><%= message.user.name %></i></b>
+	  </div>
+  	 <p><%= message.body %>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<%= message.created_at.localtime.strftime("%I:%M %P") %></p>
+	</div>
+</div>
